@@ -5,7 +5,6 @@ from PIL import Image
 import os
 
 
-# Function to draw a circle
 def draw_circle(canvas, center, radius):
     y, x = np.ogrid[:canvas.shape[0], :canvas.shape[1]]
     mask = (x - center[0]) ** 2 + (y - center[1]) ** 2 <= radius ** 2
@@ -13,7 +12,6 @@ def draw_circle(canvas, center, radius):
     return canvas
 
 
-# Function to draw a square
 def draw_square(canvas, top_left, side_length):
     x_start, y_start = top_left
     x_end = min(x_start + side_length, canvas.shape[1])
