@@ -1,0 +1,9 @@
+*.txt
+logs
+snapshots
+masks
+.idea
+masks_results
+data
+masks_test
+old
